@@ -1,0 +1,55 @@
+
+<html>
+	<head> <title>game of random numbers</title></head>
+	<body>
+		
+		<p id="text">how many finers m i holding??</p>
+		<p><input id="input" type="text"></p>
+		<p><button id="button" >enter </button></p>
+		
+		
+		
+		<script type="text/javascript">
+			document.getElementById("button").onclick=function(){
+				var numEntered= document.getElementById("input").value;
+				
+				var randomNumber = Math.random();
+				randomNumber = randomNumber * 9;
+				randomNumber = Math.floor(randomNumber);
+				
+				 
+				if(numEntered==randomNumber){
+					alert("wellldone u got it!!")
+					
+					 
+				}
+				else{
+					
+					alert("oops that's wrong!! i am holding..."   + randomNumber + "  fingers")
+					
+					
+				}
+				
+				
+				
+				
+				
+				
+			}
+			alert(Math.floor(Math.random()*5));
+		</script>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+</html>
